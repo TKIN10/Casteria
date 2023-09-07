@@ -17,27 +17,27 @@
                 <form action="/contact/complete" method="post" class="bg-white p-3 rounded mb-5">
                     <div class="form-item">
                         <label for="name">氏名</label>
-                        <input type="text" name="name" placeholder="テスト太郎" value="{$contact['name']|default:$data->name}">
+                        <input type="text" name="name" placeholder="テスト太郎" value="{$contact['name']|default:$data->name}" readonly>
                     </div>
 
                     <div class="form-item">
                         <label for="kana">ふりがな</label>
-                        <input type="text" name="kana" placeholder="てすとたろう" value="{$contact['kana']|default:$data->kana}">
+                        <input type="text" name="kana" placeholder="てすとたろう" value="{$contact['kana']|default:$data->kana}" readonly>
                     </div>
 
                     <div class="form-item">
                         <label for="email">電話番号</label>
-                        <input type="tel" name="tel" placeholder="000-0000-0000" value="{$contact['tel']|default:$data->email}">
+                        <input type="tel" name="tel" placeholder="000-0000-0000" value="{$contact['tel']|default:$data->email}" readonly>
                     </div>
 
                     <div class="form-item">
                         <label for="email">メールアドレス</label>
-                        <input type="email" name="email" placeholder="exemple@cin-group.co.jp" value="{$contact['email']|default:$data->email}">
+                        <input type="email" name="email" placeholder="exemple@cin-group.co.jp" value="{$contact['email']|default:$data->email}" readonly>
                     </div>
 
                     <div class="form-item">
                         <label for="contactform">お問い合せ内容</label>
-                        <textarea type="body" name="body" placeholder="お問い合せ" rows="4">{$contact.body|default:$data->body}</textarea>
+                        <textarea type="body" name="body" placeholder="お問い合せ" rows="4" readonly>{$contact.body|default:$data->body}</textarea>
                     </div>
 
                     <div class="edit-button">
